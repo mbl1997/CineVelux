@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Cadastro</title>
+     <meta charset="utf-8">
+
+     <link rel="stylesheet" href="css/registro.css"  type="text/css">
+     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+
+        <center> <b><h1>Cadastro</h1> </center></b> 
+
+        <!-- DADOS PESSOAIS -->
+
+<fieldset>
+        <legend>Dados Pessoais</legend> <br>
+    
+       <label>Nome Completo:</label>
+       <input type="text" id="nome" name="nomecompleto" required placeholder="Digite o nome completo"> <br><br>
+   
+      <label for="genero">Genero:</label>
+
+               <input id='Masculino' type='radio' name='genero' value='Masculino' /><label for='Masculino'>Masculino</label>
+               <input id='Feminino' type='radio' name='genero' value='Feminino' /><label for='Feminino'>Feminino</label>
+               <input id='naoResponder' type='radio' name='genero' value='naoResponder' /><label for='naoResponder'>Prefiro não responder</label>
+  
+   
+               <br><br>
+   
+           <label for="data">Data de Nascimento:</label>
+           <input type="date" name="data" id="data"> <br><br>
+   
+   
+           <label for="contato">E-mail:</label>
+             <input type="email" name="contato" id="contato" required placeholder="Apenas e-mail válido">
+           <br><br>
+   
+   
+           <label for="Password">Senha:</label>
+           <input type="password" placeholder="Password" required="" id="password" />
+           <br><br>
+   
+           <label for="telefone">Telefone:</label>
+           <input type="tel" name="telefone" id="telefone" required placeholder="Inicie com o DDD">
+           <br><br>
+   
+   </fieldset> <br><br>
+
+<!-- ENDEREÇO -->
+
+<fieldset>
+	
+        <legend>Dados de Endereço</legend>
+      
+          <label for="rua">Rua:</label>
+          <input type="text" name="rua" required placeholder="Apenas nome da rua" id="rua"><br><br>
+      
+          <label for="text">Numero:</label>
+          <input type="text" name="numero" size="5" required placeholder="numero" id="numero"> <br><br>
+      
+          <label for="complemento">Complemento:</label>
+          <input type="text" name="complemento" required placeholder="complemento" id="complemento"> <br><br>
+      
+          <label for="cidade"></label>Cidade:</label>
+          <select name="cidade" id="cidade">
+          <option value="Selecione">Selecione...</option>
+          <option value="Al">Alegrete</option>
+           <option value="Alv">Alvorada</option>
+            <option value="Be">Bento Gonçalves</option>
+           <option value="Bo">Bom Jesus</option>
+           <option value="Ca">Canela</option>
+           <option value="Can">Canoas</option>
+           <option value="Do">Dois Irmãos</option>
+           <option value="De">Dezesseis de Novembro</option>
+           <option value="Es">Esteio</option>
+           <option value="Est">Estrela</option>]
+           <option value="Fa">Farroupilha</option>
+           <option value="Fe">Feliz</option>
+           <option value="Gra">Gramado</option>
+           <option value="Gua">Guaíba</option>
+           <option value="Har">Harmonia</option>
+           <option value="Hor">Horizontina</option>
+           <option value="Igre">Igrejinha</option>
+           <option value="Ijuí">Ijuí</option>
+           <option value="Ju">Julio de Castilhos</option>
+            <option value="La">Lajeado</option>
+            <option value="Ma">Machadinho</option>
+           <option value="No">Novo Hamburgo</option>
+           <option value="Oso">Osório</option>
+           <option value="Pa">Passo Fundo</option>
+           <option value="POA">Porto Alegre</option>
+           <option value="Pe">Pelotas</option>
+           <option value="Qua">Quatro Irmãos</option>
+           <option value="Ro">Rosário do Sul</option>
+           <option value="Cru">Santa Cruz do Sul</option>
+           <option value="Maria">Santa Maria</option>
+           <option value="Sa">Santiago</option>
+           <option value="To">Torres</option>
+           <option value="Tre">Três Passos</option>
+           <option value="Uru">Uruguaiana</option>
+           <option value="Vi">Viamão</option>
+           <option value="Vila">Vila Maria</option>
+           <option value="Wes">Westfália</option>
+           <option value="Xa">Xangri-lá</option>
+               </select>
+
+
+         <label for="estado">Estado:</label>
+         <input type="text" name="estado" required placeholder="estado" id="estado"> <br><br>
+
+        <label for="pais">País:</label>
+        <input type="text" name="pais" required placeholder="pais" id="pais"><br> <br>
+               
+      </fieldset> <br><br>
+
+
+    <input type="reset" id="limpar" name="limpar" value="Limpar"> 
+    <input type="submit" id="enviar" name="enviar" value="Enviar">
+
+
+    <footer>
+        <center>
+                <div class="footer-copyright">
+                        <div class="container"> 
+                        Copyright © 2019 Todos os direitos reservados.
+                        </div>
+                      </div>
+        </center>
+    </footer>
+
+    <script src="js/formulario.js"></script>
+
+</body>
+</html>

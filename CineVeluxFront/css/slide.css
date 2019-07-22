@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Concert+One&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap);
+
+body {
+  font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    text-size-adjust: 100%;
+  }
+  
+  h1 {
+      
+      font: 1em sans-serif;
+    animation: bounce .4s alternate infinite ease-in;
+   /* animation-name: slidein; */
+   animation-duration: 3s;
+  }
+  
+  
+  
+  @media screen and (min-width:701px) {
+      @keyframes bounce {
+          0% {
+              transform: translateX(50%);
+          }
+          100% {
+              transform: translateX(-50%);
+          }
+      }
+    
+    h1 {
+      color:white;
+      display: inline-block; /*needed to trigger update */
+    }
+  }
+  
+  @media screen and (max-width:700px) {
+      @keyframes bounce {
+          0% {
+              transform: translateY(-200%);
+          }
+          100% {
+              transform: translateY(0);
+          }
+      }
+     }
+  

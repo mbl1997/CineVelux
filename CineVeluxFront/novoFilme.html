@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Novo Filme| Um site para quem curte relaxar</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+     <main>
+            <nav>
+             <div id="logo">Cine Velux</div> 
+
+             <label for="drop" class="toggle">Menu</label>
+             <input type="checkbox" id="drop" />
+                <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="detalhesfilmes.html">Detalhes e Sinopse</a></li>
+                <li>
+                    <!-- Primeiro nível suspenso -->
+                    <label for="drop-1" class="toggle">Catalogo +</label>
+                    <a href="filme.html">Filmes</a>
+                    <input type="checkbox" id="drop-1"/>
+                    <ul>
+                        <li><a href="series.html">Serie</a></li>
+                        <li><a href="comentario.html">Comentarios</a></li>
+                    </ul> 
+
+                </li>
+                <li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a id="logoutBtn">Sair</a></li>
+                </ul>
+            </nav>
+         </main>
+
+         <b><h1>CADASTRO NOVO FILME!</h1></b>
+
+        <fieldset>
+            <legend>Filme</legend> 
+
+
+            <label for="titulo">Titulo:</label>
+            <input type="text" name="titulo" required placeholder="titulo" id="titulo"> <br> <br>
+
+            <label>Genero:</label>
+            <select name="select" id="generofilme">
+                <option value="selecione" selected>Selecione</option>
+                <option value="acao">Acao</option> 
+                <option value="romance">Romance</option>
+                <option value="terror">Terror</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Comedia">Comedia</option>
+                <option value="drama">Drama</option>
+                <option value="faroeste">Faroeste</option>
+                <option value="erotico">Erotico</option>
+                <option value="documentarios">Documentarios</option>
+                <option value="ficcao">Ficcao Cientifica</option>
+                <option value="fantasia">Fantasia</option>
+                <option value="suspense">Suspense</option>
+                <option value="animacao">Animacao</option>
+                <option value="musical">Musical</option>
+            </select>
+
+            <br><br>
+            <input type="text" id="txtid" value="">
+            <input type="reset" value="Cancelar">
+            <button id="enviarFilme">Enviar</button>
+
+        </fieldset>
+        
+     
+             <h2>Tabela de Filmes </h2>
+             <div id="tabela"></div>
+       
+      
+
+
+    <footer>
+        <center>
+                <div class="footer-copyright">
+                        <div class="container"> 
+                        Copyright  2019 Todos os direitos reservados.
+                        </div>
+                      </div>
+        </center>
+    </footer>
+
+
+            <script src="js/validacao.js"></script>
+            <script src="js/validafilme.js"></script>
+    </body>
+    </html>
